@@ -1,0 +1,47 @@
+{
+  "AirShoppingRS": {
+    "ShoppingResponseID": {
+      "Owner": "EK",
+      "ResponseID": { "value": "MOCK-SHOP-001" }
+    },
+    "OffersGroup": {
+      "AirlineOffers": [
+        {
+          "Owner": "EK",
+          "AirlineOffer": [
+            {
+              "OfferID": { "Owner": "EK", "Channel": "NDC", "value": "OFFER-MOCK-001" },
+              "TotalPrice": {
+                "DetailCurrencyPrice": {
+                  "Total": { "value": 350.00, "Code": "USD" },
+                  "Taxes": { "Total": { "value": 50.00, "Code": "USD" } }
+                }
+              },
+              "TimeLimits": { "OfferExpiration": "2025-12-01T23:59:00" },
+              "FlightsOverview": [
+                {
+                  "FlightKey": "FL001",
+                  "Departure": { "AirportCode": { "value": "DEL" }, "Date": "2025-12-01", "Time": "08:00" },
+                  "Arrival":   { "AirportCode": { "value": "DXB" }, "Date": "2025-12-01", "Time": "10:30" }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "DataLists": {
+      "FlightSegmentList": {
+        "FlightSegment": [
+          {
+            "SegmentKey": "SEG001",
+            "Departure":  { "AirportCode": { "value": "DEL" }, "Date": "2025-12-01", "Time": "08:00" },
+            "Arrival":    { "AirportCode": { "value": "DXB" }, "Date": "2025-12-01", "Time": "10:30" },
+            "MarketingCarrier": { "AirlineID": { "value": "EK" }, "FlightNumber": { "value": "521" } },
+            "ClassOfService": { "Code": { "value": "Y" } }
+          }
+        ]
+      }
+    }
+  }
+}
